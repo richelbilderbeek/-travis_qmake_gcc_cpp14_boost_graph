@@ -1,4 +1,4 @@
-# travis_qmake_gcc_cpp14_boost
+# travis_qmake_gcc_cpp14_boost_graph
 
 Branch|[![Travis CI logo](TravisCI.png)](https://travis-ci.org)
 ---|---
@@ -7,23 +7,18 @@ master|[![Build Status](https://travis-ci.org/richelbilderbeek/travis_qmake_gcc_
 This GitHub is part of:
 
  * [the Travis C++ Tutorial](https://github.com/richelbilderbeek/travis_cpp_tutorial)
- * [the MXE tutorial](https://github.com/richelbilderbeek/mxe_tutorial)
 
 The goal of this project is to have a clean Travis CI build, with specs:
  * Build system: `qmake`
  * C++ compiler: `gcc`
  * C++ version: `C++14`
- * Libraries: `STL` and `Boost`
+ * Libraries: `STL`, `Boost` and Boost.Graph (using Graphviz)
  * Code coverage: none
  * Source: one single file, `main.cpp`
 
 More complex builds:
- * Add Boost.Graph (and Graphviz): [travis_qmake_gcc_cpp14_boost_graph](https://www.github.com/richelbilderbeek/travis_qmake_gcc_cpp14_boost_graph)
- * Add Boost.Test: [travis_qmake_gcc_cpp14_boost_test](https://www.github.com/richelbilderbeek/travis_qmake_gcc_cpp14_boost_test)
- * Add `gcov`: [travis_qmake_gcc_cpp14_boost_gcov](https://www.github.com/richelbilderbeek/travis_qmake_gcc_cpp14_boost_gcov)
- * Add `OCLint`: [travis_qmake_gcc_cpp14_boost_oclint](https://www.github.com/richelbilderbeek/travis_qmake_gcc_cpp14_boost_oclint)
- * Add `Qt5`: [travis_qmake_gcc_cpp14_boost_qt5](https://www.github.com/richelbilderbeek/travis_qmake_gcc_cpp14_boost_qt5)
+ * [none]
 
 Simpler builds:
- * Libraries: `STL` only: [travis_qmake_gcc_cpp14](https://www.github.com/richelbilderbeek/travis_qmake_gcc_cpp14)
+ * No Boost.Graph: [travis_qmake_gcc_cpp14_boost](https://www.github.com/richelbilderbeek/travis_qmake_gcc_cpp14_boost)
 
