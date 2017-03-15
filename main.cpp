@@ -31,7 +31,7 @@ int main()
     boost::property<boost::edge_name_t,std::string>
   > Graph;
 
-  Graph  g;
+  Graph g;
 
   const auto v1 = boost::add_vertex(std::string("Mr. A"),g);
   const auto v2 = boost::add_vertex(std::string("Mrs. B"),g);
@@ -52,5 +52,15 @@ int main()
     //- All names are replaced by numbers
     //- All relationships are omitted
     boost::write_graphviz(f,g);
+  }
+
+  {
+    std::ifstream f("test.dot");
+    Graph h;
+    boost::dynamic_properties dp(
+      boost::ignore_other_properties
+    );
+    boost::read_graphviz(f,h,dp);
+    boost::write_graphviz(std::cout,h);
   }
 }

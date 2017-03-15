@@ -11,3 +11,5 @@ QMAKE_LINK = g++-5
 QMAKE_CC = gcc-5
 
 QMAKE_CXXFLAGS += -std=c++14
+
+LIBS += -lboost_graph
